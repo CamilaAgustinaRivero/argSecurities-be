@@ -1,8 +1,13 @@
 const { response } = require('express');
 
 const personaFisica = (req, res = response) => {
+    const { datosPrincipales } = req.body;
+    const { nombre, apellido, tipoDNI, DNI } = datosPrincipales;
     res.json({
-        msg: 'Persona fisica'
+        nombre,
+        apellido,
+        tipoDNI,
+        DNI
     });
 };
 
