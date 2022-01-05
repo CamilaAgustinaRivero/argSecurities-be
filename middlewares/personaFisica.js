@@ -32,6 +32,14 @@ module.exports = {
         check('datosPersonales.lugarNacimiento', 'El lugar de nacimiento ingresado no es válido.').isLength({ min: 4, max: 50 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
         check('datosPersonales.profesion', 'La profesión es obligatoria. (*)').trim().not().isEmpty(),
         check('datosPersonales.profesion', 'La profesión ingresada no es válida.').isLength({ min: 4, max: 50 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
+        // Medios de comunicación
+        check('mediosComunicacion.email', 'El e-mail es obligatorio. (*)').trim().not().isEmpty(),
+        check('mediosComunicacion.email', 'El e-mail ingresado no es válido. (*)').isEmail().normalizeEmail(),
+        check('mediosComunicacion.usoEmail', 'Seleccione el tipo de uso. (*)').trim().not().isEmpty(),
+        check('mediosComunicacion.telefono', 'El teléfono es obligatorio. (*)').trim().not().isEmpty(),
+        // TO DO: mejorar la validación del teléfono
+        check('mediosComunicacion.telefono', 'El teléfono ingresado no es válido. (*)').isNumeric(),
+        check('mediosComunicacion.usoTelefono', 'Seleccione el tipo de uso. (*)').trim().not().isEmpty(),
         camposValidaciones
     ]
 };
