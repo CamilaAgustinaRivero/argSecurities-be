@@ -1,7 +1,12 @@
 const { check } = require('express-validator');
 const { camposValidaciones } = require('./campos');
 
-// TO DO: Validar los campos que no son obligatorios
+/* 
+    TO DO: 
+        - Validar los campos que no son obligatorios.
+        - Cuentas bancarias del exterior y Datos del cónyuge
+*/
+
 module.exports = {
     personaFisicaValidaciones: [
         // Datos principales
@@ -58,6 +63,18 @@ module.exports = {
         check('cuentasBancarias.tipoCuenta', 'Seleccione el tipo de cuenta. (*)').trim().notEmpty(),
         check('cuentasBancarias.moneda', 'Seleccione el tipo de moneda. (*)').trim().notEmpty(),
         check('cuentasBancarias.usoCuenta', 'Seleccione el tipo de uso. (*)').trim().notEmpty(),
+        // Información patrimonial
+        check('informacionPatrimonial.fecha', 'La fecha es obligatoria. (*)').trim().notEmpty(),
+        // YYYY - MM - DD
+        check('informacionPatrimonial.fecha', 'La fecha ingresada no es válida.').isDate(),
+        check('informacionPatrimonial.ingresosAnuales', 'Los ingresos son obligatorios. (*)').trim().notEmpty(),
+        check('informacionPatrimonial.ingresosAnuales', 'Los ingresos declarados no son válidos.').isNumeric(),
+        check('informacionPatrimonial.inversores', 'El porcentaje destinado a inversores es obligatorio. (*)').trim().notEmpty(),
+        check('informacionPatrimonial.inversores', 'El porcentaje declarado no es válido.').isNumeric(),
+        check('informacionPatrimonial.procedenciaFondos', 'La procedencia de los fondos es obligatoria. (*)').trim().notEmpty(),
+        check('informacionPatrimonial.observaciones', 'Las observaciones son obligatorias. (*)').optional().trim().notEmpty(),
+        check('informacionPatrimonial.observaciones', 'El texto es demasiado corto o contiene caracteres especiales.').optional().isLength({ min: 10 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
+        check('informacionPatrimonial.medioFondeo', 'El medio de fondeo es obligatorio. (*)').trim().notEmpty(),
         camposValidaciones
     ]
 };
