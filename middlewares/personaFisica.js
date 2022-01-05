@@ -51,6 +51,13 @@ module.exports = {
         check('domiciliosUrbanos.codigoPostal', 'El código postal es obligatorio. (*)').trim().notEmpty(),
         // TO DO: mejorar la validacón del código postal
         check('domiciliosUrbanos.codigoPostal', 'El código postal ingresado no es válido.').isNumeric(),
+        // Cuentas bancarias
+        check('cuentasBancarias.tipoID', 'Seleccione el tipo de ID. (*)').trim().notEmpty(),
+        check('cuentasBancarias.ID', 'El CBU / CVU es obligatorio. (*)').trim().notEmpty(),
+        check('cuentasBancarias.ID', 'El CBU / CVU ingresado no es válido.').isLength(22).isInt(),
+        check('cuentasBancarias.tipoCuenta', 'Seleccione el tipo de cuenta. (*)').trim().notEmpty(),
+        check('cuentasBancarias.moneda', 'Seleccione el tipo de moneda. (*)').trim().notEmpty(),
+        check('cuentasBancarias.usoCuenta', 'Seleccione el tipo de uso. (*)').trim().notEmpty(),
         camposValidaciones
     ]
 };
