@@ -9,7 +9,8 @@ const personaFisica = (req, res = response) => {
         domiciliosUrbanos,
         cuentasBancarias,
         informacionPatrimonial,
-        actividades
+        actividades,
+        declaraciones
     } = req.body;
 
     res.status(201).json({
@@ -21,7 +22,8 @@ const personaFisica = (req, res = response) => {
         domiciliosUrbanos,
         cuentasBancarias,
         informacionPatrimonial,
-        actividades
+        actividades,
+        declaraciones
     });
 };
 

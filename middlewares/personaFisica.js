@@ -72,12 +72,18 @@ module.exports = {
         check('informacionPatrimonial.inversores', 'El porcentaje destinado a inversores es obligatorio. (*)').trim().notEmpty(),
         check('informacionPatrimonial.inversores', 'El porcentaje declarado no es válido.').isNumeric(),
         check('informacionPatrimonial.procedenciaFondos', 'La procedencia de los fondos es obligatoria. (*)').trim().notEmpty(),
-        check('informacionPatrimonial.observaciones', 'Las observaciones son obligatorias. (*)').optional().trim().notEmpty(),
-        check('informacionPatrimonial.observaciones', 'El texto es demasiado corto o contiene caracteres especiales.').optional().isLength({ min: 10 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
+        check('informacionPatrimonial.observaciones', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
         check('informacionPatrimonial.medioFondeo', 'El medio de fondeo es obligatorio. (*)').trim().notEmpty(),
-        // Activiades
+        // Actividades
         check('actividades.actividadPrincipal', 'La actividad principal es obligatoria. (*)').trim().notEmpty(),
         check('actividades.actividadPrincipal', 'La actividad ingresada no es válida.').isLength({ min: 4, max: 50 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
+        // Declaraciones
+        check('declaraciones.EP', 'La opción seleccionada no es válida.').optional().isBoolean(),
+        check('declaraciones.observacionesEP', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
+        check('declaraciones.UIF', 'La opción seleccionada no es válida.').optional().isBoolean(),
+        check('declaraciones.observacionesUIF', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
+        check('declaraciones.validadoPor', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
+        check('declaraciones.ultimaValidacion').isDate(),
         camposValidaciones
     ]
 };
