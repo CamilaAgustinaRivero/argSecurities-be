@@ -75,6 +75,9 @@ module.exports = {
         check('informacionPatrimonial.observaciones', 'Las observaciones son obligatorias. (*)').optional().trim().notEmpty(),
         check('informacionPatrimonial.observaciones', 'El texto es demasiado corto o contiene caracteres especiales.').optional().isLength({ min: 10 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
         check('informacionPatrimonial.medioFondeo', 'El medio de fondeo es obligatorio. (*)').trim().notEmpty(),
+        // Activiades
+        check('actividades.actividadPrincipal', 'La actividad principal es obligatoria. (*)').trim().notEmpty(),
+        check('actividades.actividadPrincipal', 'La actividad ingresada no es válida.').isLength({ min: 4, max: 50 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
         camposValidaciones
     ]
 };
