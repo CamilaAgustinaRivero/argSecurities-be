@@ -1,8 +1,13 @@
 const { response } = require('express');
 
 const personaFisica = (req, res = response) => {
-    res.json({
-        msg: 'Persona fisica'
+    const {
+        titular
+    } = req.body;
+
+    res.status(201).json({
+        msg: 'Los datos fueron cargados de manera exitosa.',
+        titular
     });
 };
 
