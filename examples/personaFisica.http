@@ -1,0 +1,167 @@
+POST http://localhost:1234/api/persona/fisica
+Content-Type: application/json
+
+{
+    "titular": {
+        "personaFisica": true,
+        "datosPrincipalesFisicas": {
+            "nombre": "Camila TEST",
+            "apellido": "Rivero TEST",
+            "tipoID": "DNI",
+            "id": "40404404"
+        },
+        "datosFiscales": {
+            "tipoCodigo": "CUIL",
+            "cuit": "2040063237",
+            "tipoResponsableIVA": "Responsable monotributo",
+            "tipoResponsableGanancias": "Inscripto",
+            "codigosActividades": ["algo", "algo 1"]
+        },
+        "datosPersonales": {
+            "fechaNacimiento": "25/10/1996",
+            "sexo": "Femenino",
+            "estadoCivil": "Soltero",
+            "idioma": "Español",
+            "nacionalidad": "Argentina",
+            "paisResidencia": "Argentina",
+            "paisOrigen": "Argentina",
+            "lugarNacimiento": "Gral. FAKE Roldriguez ñé",
+            "cie": "1234",
+            "actividad": "Desarrolladora"
+        },
+        "datosConyuge": [
+            {
+                "nombre": "Jose",
+                "apellido": "Lui",
+                "tipoID": "DNI",
+                "id": "3",
+                "tipoFiscal": "CUIT",
+                "claveFiscal": "34020"
+            }
+        ],
+        "mediocomunicacion": [
+            {
+                "tipo": "E-Mail",
+                "medio": "camila@gmail.com",
+                "uso": "Personal",
+                "principal": true,
+                "notas": "esto es una nota"
+            },
+            {
+                "tipo": "Teléfono",
+                "medio": 1173667818,
+                "uso": "Personal",
+                "principal": false,
+                "notas": "esto es una nota"
+            }
+        ],
+        "domicilioUrbano": [
+            {
+                "uso": "Legal",
+                "barrio": "Bella Vista",
+                "calle": "Córdoba",
+                "numero": 823,
+                "torre": "1",
+                "piso": "4",
+                "departamento": "B",
+                "lugar": "Bella Vista",
+                "codigoPostal": 1661,
+                "notas": "nota"
+            },
+            {
+                "uso": "Real",
+                "barrio": "Bella Vista",
+                "calle": "Córdoba",
+                "numero": 823,
+                "torre": "4",
+                "piso": "5",
+                "departamento": "B",
+                "lugar": "Bella Vista",
+                "codigoPostal": 1661,
+                "notas": "esto es una nota"
+            },
+            {
+                "uso": "Real",
+                "barrio": "Bella Vista",
+                "calle": "Córdoba",
+                "numero": 823,
+                "torre": "2",
+                "piso": "2",
+                "departamento": "2",
+                "lugar": "Bella Vista",
+                "codigoPostal": 1661,
+                "notas": "a"
+            }
+        ],
+        "cuentaBancaria": [
+            {
+                "tipoID": "CBU",
+                "cbu": "1234567891234567891234",
+                "alias": "UN.ALIAS",
+                "interbanking": false,
+                "denominacion": "deno",
+                "tipo": "Cuenta corriente",
+                "moneda": "ARS",
+                "numero": "200",
+                "uso": "Personal",
+                "notas": "nota"
+            }
+        ],
+        "cuentaBancariaExterior": [
+            {
+                "cuenta": "1234567890123456789012",
+                "moneda": "USD",
+                "banco": "a",
+                "denominacion": "d",
+                "direccion": "dire",
+                "holderType": "Business",
+                "accountType": "Checking",
+                "nroBancoABA": "asdf",
+                "idSWIFT": "123",
+                "notas": "notas"
+            }
+        ],
+        "infoPatrimonial": [
+            {
+                "fecha": "25/10/1996",
+                "patrimonio": "0",
+                "ingresos": "500000",
+                "inversion": "0",
+                "procedenciaFondos": ["ok"],
+                "observaciones": "Trabajo."
+            }
+        ],
+        "actividadPersona": [
+            {
+                "actividad": "Desarolladora",
+                "codigoTipoActividad": "",
+                "rubro": "",
+                "puesto": "",
+                "departamento": "",
+                "organizacion": "",
+                "inicio": "25/10/1996",
+                "fin": "25/11/1996",
+                "observaciones": ""
+            }
+        ],
+        "declaraciones": {
+            "expuestaPoliticamente": false,
+            "detalleExpPoliticamente": "",
+            "sujetoObligado": true,
+            "sujetoObligadoUIF": "Texto texto texto",
+            "numeroInscripcion": 1234168,
+            "validadoPor": "",
+            "ultimaValidacion": "25/10/1996"
+        },
+        "perfilInversor": {
+            "experiencia": "Ninguna",
+            "perfilPersonal": "Conservador"
+        }
+    },
+    "disposicionesGenerales": {
+        "tipoCliente": "tipoCliente",
+        "horizonteInversion": "Menor a un año",
+        "perfilDeInversion": "null"
+    },
+    "administrador": {}
+}
