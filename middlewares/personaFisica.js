@@ -134,7 +134,6 @@ module.exports = {
 
         // Actividades
         check('titular.actividadPersona[0].actividad', 'La actividad principal es obligatoria. (*)').trim().notEmpty(),
-        check('titular.actividadPersona[0].actividad', 'La actividad ingresada no es válida.').isLength({ min: 4, max: 50 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
         check('titular.actividadPersona[0].codigoTipoActividad', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
         check('titular.actividadPersona[0].rubro', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
         check('titular.actividadPersona[0].puesto', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),

@@ -7,10 +7,12 @@ const {
 
 const personaFisica = async (req, res = response) => {
     const {
-        titular
+        titular,
+        disposicionesGenerales,
+        administrador
     } = req.body;
 
-    const account =  await openAccount(titular)
+    const account =  await openAccount({titular, disposicionesGenerales, administrador})
     console.log(account)
     res.status(201).json({
         msg: 'Los datos fueron cargados de manera exitosa.',
@@ -24,7 +26,7 @@ const personaJuridica = (req, res = response) => {
     });
 };
 
-const openAccount = async (titular) => {
+const openAccount = async (payload) => {
     const { token } = await login()
     try {
         const endpoint = process.env.AUNESA_OPENING_ACOUNT_ENDPOINT
@@ -35,10 +37,10 @@ const openAccount = async (titular) => {
                 'Authorization': `Bearer ${token}`
             }
         })
-        const res = await instance.post(endpoint, {titular})
+        const res = await instance.post(endpoint, payload)
         return res
     } catch (error) {
-        console.log(error.response.data.errors)
+        console.log(error.response.data);
         // console.log(error.toJSON())
         // console.error(error)
     }

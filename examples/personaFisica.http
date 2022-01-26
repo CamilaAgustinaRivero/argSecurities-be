@@ -22,7 +22,7 @@ Content-Type: application/json
             "sexo": "Femenino",
             "estadoCivil": "Soltero",
             "idioma": "Español",
-            "nacionalidad": "Argentina",
+            "nacionalidad": "Axgentina",
             "paisResidencia": "Argentina",
             "paisOrigen": "Argentina",
             "lugarNacimiento": "Gral. FAKE Roldriguez ñé",
@@ -159,9 +159,8 @@ Content-Type: application/json
         }
     },
     "disposicionesGenerales": {
-        "tipoCliente": "tipoCliente",
-        "horizonteInversion": "Menor a un año",
-        "perfilDeInversion": "null"
+        "horizonteInversion": null,
+        "perfilDeInversion": null
     },
     "administrador": {}
 }
