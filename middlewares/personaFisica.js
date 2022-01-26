@@ -24,7 +24,7 @@ module.exports = {
         // Datos personales
         check('titular.datosPersonales.fechaNacimiento', 'La fecha de nacimiento es obligatoria. (*)').trim().notEmpty(),
         // YYYY - MM - DD
-        check('titular.datosPersonales.fechaNacimiento', 'La fecha de nacimiento ingresada no es válida.').isDate(),
+        check('titular.datosPersonales.fechaNacimiento', 'La fecha de nacimiento ingresada no es válida.').notEmpty(),
         check('titular.datosPersonales.sexo', 'Seleccione el sexo. (*)').trim().notEmpty(),
         check('titular.datosPersonales.estadoCivil', 'Seleccione el estado civil. (*)').trim().notEmpty(),
         check('titular.datosPersonales.idioma', 'Seleccione el idioma. (*)').trim().notEmpty(),
@@ -123,18 +123,17 @@ module.exports = {
         // Información patrimonial
         check('titular.infoPatrimonial[0].fecha', 'La fecha es obligatoria. (*)').trim().notEmpty(),
         // YYYY - MM - DD
-        check('titular.infoPatrimonial[0].fecha', 'La fecha ingresada no es válida.').isDate(),
+        check('titular.infoPatrimonial[0].fecha', 'La fecha ingresada no es válida.').notEmpty(),
         check('titular.cuentaBancaria[0].patrimonio', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
         check('titular.infoPatrimonial[0].ingresos', 'Los ingresos son obligatorios. (*)').trim().notEmpty(),
         check('titular.infoPatrimonial[0].ingresos', 'Los ingresos declarados no son válidos.').isNumeric(),
         check('titular.infoPatrimonial[0].inversion', 'El porcentaje destinado a inversores es obligatorio. (*)').trim().notEmpty(),
         check('titular.infoPatrimonial[0].inversion', 'El porcentaje declarado no es válido.').isNumeric(),
-        check('titular.infoPatrimonial[0].procedenciaFondos', 'La procedencia de los fondos es obligatoria. (*)').trim().notEmpty(),
+        check('titular.infoPatrimonial[0].procedenciaFondos', 'La procedencia de los fondos es obligatoria. (*)').optional(),
         check('titular.infoPatrimonial[0].observaciones', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
 
         // Actividades
         check('titular.actividadPersona[0].actividad', 'La actividad principal es obligatoria. (*)').trim().notEmpty(),
-        check('titular.actividadPersona[0].actividad', 'La actividad ingresada no es válida.').isLength({ min: 4, max: 50 }).matches('^[a-zA-Z\u00C0-\u017F\s, . ]+$'),
         check('titular.actividadPersona[0].codigoTipoActividad', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
         check('titular.actividadPersona[0].rubro', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),
         check('titular.actividadPersona[0].puesto', 'El texto es demasiado largo.').optional().trim().isLength({ max: 50 }),

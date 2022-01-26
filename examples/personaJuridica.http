@@ -1,0 +1,1208 @@
+POST http://localhost:1234/api/persona/fisica
+Content-Type: application/json
+
+{
+  "titular": {
+    "personaFisica": false,
+    "datosPrincipalesIdeal": {
+      "denominacion": "AGAS",
+      "tipoDeOrganizacion": "COMPUTACION",
+      "tipoID": "CUITE",
+      "id": "20111111122"
+    },
+    "datosFiscales": {
+      "tipoCodigo": "CUIL",
+      "cuit": "20319968246",
+      "tipoResponsableIVA": "Responsable monotributo",
+      "tipoResponsableGanancias": "Responsable monotributo",
+      "actividades": [
+        "[011] Cultivos temporales",
+        "[011121] Cultivo de maíz"
+      ]
+    },
+    "residenciaFiscalExterior": [
+      {
+        "residenciaFiscalExterior": "Colombia",
+        "tipoIdExterior": "NIF",
+        "idFiscalExterior": "55555"
+      },
+      {
+        "residenciaFiscalExterior": "Colombia",
+        "tipoIdExterior": "NIF",
+        "idFiscalExterior": "4444444"
+      }
+    ],
+    "datosOrganizacion": {
+      "fechaConstitucion": "23/04/2012",
+      "actaConstitucion": null,
+      "paisOrigen": "Uruguay",
+      "paisResidencia": "Perú",
+      "cierreBalance": "23/04/2012",
+      "idioma": "español",
+      "cie": "serf",
+      "lei": "serf",
+      "observaciones": null
+    },
+    "registro": [
+      {
+        "tipo": "CNV",
+        "numero": "6258-B",
+        "lugar": "Argentina",
+        "fecha": "23/04/2012",
+        "folio": "3381",
+        "libro": "50",
+        "tomo": "3"
+      },
+      {
+        "tipo": "CNV",
+        "numero": null,
+        "lugar": null,
+        "fecha": null,
+        "folio": null,
+        "libro": null,
+        "tomo": null
+      }
+    ],
+    "mediocomunicacion": [
+      {
+        "tipo": "E-Mail",
+        "medio": "aaaa@gmail.com",
+        "uso": "Personal",
+        "principal": true,
+        "notas": null
+      },
+      {
+        "tipo": "Movil",
+        "medio": "03512223344",
+        "uso": "Personal",
+        "principal": null,
+        "notas": null
+      }
+    ],
+    "domicilioUrbano": [
+      {
+        "uso": "Legal",
+        "barrio": "las carmenes",
+        "calle": "brazil",
+        "numero": 22,
+        "torre": "1",
+        "piso": 2,
+        "departamento": "201",
+        "lugar": "Argentina, Ciudad Autónoma de Buenos Aires, Comuna 1, Buenos Aires",
+        "codigoPostal": "5152",
+        "notas": null
+      },
+      {
+        "uso": "Real",
+        "barrio": null,
+        "calle": "brazil",
+        "numero": null,
+        "torre": null,
+        "piso": null,
+        "departamento": null,
+        "lugar": "Argentina, Ciudad Autónoma de Buenos Aires, Comuna 1, Buenos Aires",
+        "codigoPostal": "5152",
+        "notas": null
+      }
+    ],
+    "domicilioSimple": [
+      {
+        "uso": "Legal",
+        "pais": "Argentina",
+        "direccion": "brazil",
+        "ubicacion": "22",
+        "ciudad": "cordoba",
+        "codigoPostal": "5152",
+        "provincia": "Cordoba",
+        "notas": null
+      },
+      {
+        "uso": "Real",
+        "pais": "Argentina",
+        "direccion": "colombia",
+        "ubicacion": null,
+        "ciudad": null,
+        "codigoPostal": "5152",
+        "provincia": null,
+        "notas": null
+      }
+    ],
+    "domicilioRural": [
+      {
+        "uso": "Legal",
+        "pais": "Argentina",
+        "direccion": "brazil",
+        "ubicacion": "22",
+        "codigoPostal": "5152",
+        "notas": null
+      },
+      {
+        "uso": "Real",
+        "pais": "Argentina",
+        "direccion": "colombia",
+        "ubicacion": "22",
+        "codigoPostal": "5000",
+        "notas": null
+      }
+    ],
+    "cuentaBancaria": [
+      {
+        "cbu": "0720000720000001435504",
+        "alias": "juan",
+        "interbancking": false,
+        "tipo": "Cuenta corriente",
+        "moneda": "ARS",
+        "numero": "4567890120",
+        "denominacion": null,
+        "uso": "Personal",
+        "principal": true
+      },
+      {
+        "cbu": "0720000720000001435504",
+        "alias": null,
+        "interbancking": null,
+        "tipo": null,
+        "moneda": null,
+        "numero": "4567890125",
+        "denominacion": null,
+        "uso": null,
+        "principal": null
+      }
+    ],
+    "cuentaBancariaExterior": [
+      {
+        "cuenta": "1234567890123456789012",
+        "moneda": "ARS",
+        "banco": "citybank",
+        "denominacion": "City",
+        "direccion": "new york 5000",
+        "holderType": "Business",
+        "accountType": "Checking",
+        "nroBancoABA": "123456789",
+        "idSWIFT": "12345678",
+        "notas": null
+      },
+      {
+        "cuenta": "1234567890123456789012",
+        "moneda": null,
+        "banco": null,
+        "denominacion": null,
+        "direccion": null,
+        "holderType": null,
+        "accountType": null,
+        "nroBancoABA": null,
+        "idSWIFT": null,
+        "notas": null
+      }
+    ],
+    "autoridad": [
+      {
+        "cargo": "Socio",
+        "autoridad": {
+          "personaFisica": true,
+          "datosPrincipalesFisicas": {
+            "nombre": "Claudio",
+            "apellido": "PEREZ",
+            "tipoID": "DNI",
+            "id": "42381087"
+          },
+          "datosFiscales": {
+            "tipoCodigo": "CUIL",
+            "cuit": "20157040151",
+            "tipoResponsableIVA": "Responsable monotributo",
+            "tipoResponsableGanancias": "Responsable monotributo",
+            "actividades": [
+              "[011] Cultivos temporales",
+              "[011121] Cultivo de maíz"
+            ]
+          },
+          "residenciaFiscalExterior": [
+            {
+              "residenciaFiscalExterior": "Angola",
+              "tipoIdExterior": null,
+              "idFiscalExterior": "55555"
+            },
+            {
+              "residenciaFiscalExterior": "Angola",
+              "tipoIdExterior": "NIF",
+              "idFiscalExterior": "4444444"
+            }
+          ],
+          "datosPersonales": {
+            "fechaNacimiento": "23/04/2012",
+            "sexo": "Masculino",
+            "estadoCivil": "Soltero",
+            "idioma": "español",
+            "nacionalidad": "Argentina",
+            "paisResidencia": "Argentina",
+            "paisOrigen": "Argentina",
+            "lugarNacimiento": "er",
+            "cie": "serf",
+            "actividad": "sffdfs"
+          },
+          "pasaporte": [
+            {
+              "pais": "Argentina",
+              "pasaporte": "dsad2",
+              "vencimiento": "23/04/2012",
+              "notas": "dgdgvd"
+            },
+            {
+              "pais": "Argentina",
+              "pasaporte": "dsad2",
+              "vencimiento": null,
+              "notas": null
+            }
+          ],
+          "mediocomunicacion": [
+            {
+              "tipo": "E-Mail",
+              "medio": "pppp@gmail.com",
+              "uso": "Personal",
+              "principal": true,
+              "notas": null
+            },
+            {
+              "tipo": "Movil",
+              "medio": "03512225566",
+              "uso": "Personal",
+              "principal": null,
+              "notas": null
+            }
+          ],
+          "domicilioUrbano": [
+            {
+              "uso": "Legal",
+              "barrio": "las carmenes",
+              "calle": "Ituzaingó",
+              "numero": 72,
+              "torre": null,
+              "piso": 1,
+              "departamento": "2",
+              "lugar": "Argentina, Córdoba, Capital, Córdoba",
+              "codigoPostal": "5000",
+              "notas": null
+            },
+            {
+              "uso": "Real",
+              "barrio": null,
+              "calle": "santa fe",
+              "numero": 18,
+              "torre": null,
+              "piso": null,
+              "departamento": null,
+              "lugar": "Argentina, Córdoba, Capital, Córdoba",
+              "codigoPostal": "5152",
+              "notas": null
+            }
+          ],
+          "domicilioSimple": [
+            {
+              "uso": "Legal",
+              "pais": "Argentina",
+              "direccion": "santa fe",
+              "ubicacion": "45",
+              "ciudad": "cordoaba",
+              "codigoPostal": "5152",
+              "provincia": "Cordoba",
+              "notas": null
+            },
+            {
+              "uso": "Real",
+              "pais": "Argentina",
+              "direccion": "colombia",
+              "ubicacion": null,
+              "ciudad": null,
+              "codigoPostal": "5153",
+              "provincia": null,
+              "notas": null
+            }
+          ],
+          "domicilioRural": [
+            {
+              "uso": "Legal",
+              "pais": "Argentina",
+              "direccion": "brazil",
+              "ubicacion": "55",
+              "codigoPostal": "5153",
+              "notas": null
+            },
+            {
+              "uso": "Real",
+              "pais": "Argentina",
+              "direccion": "colombia",
+              "ubicacion": "28",
+              "codigoPostal": "5120",
+              "notas": null
+            }
+          ],
+          "cuentaBancaria": [
+            {
+              "cbu": "0720000720000001435504",
+              "alias": "juan",
+              "interbancking": false,
+              "tipo": "Cuenta corriente",
+              "moneda": "ARS",
+              "numero": "4567890122",
+              "denominacion": null,
+              "uso": "Personal",
+              "principal": true
+            },
+            {
+              "cbu": "0720000720000001435504",
+              "alias": null,
+              "interbancking": null,
+              "tipo": null,
+              "moneda": null,
+              "numero": "4567890121",
+              "denominacion": null,
+              "uso": null,
+              "principal": null
+            }
+          ],
+          "cuentaBancariaExterior": [
+            {
+              "cuenta": "1234567890777777777777",
+              "moneda": "ARS",
+              "banco": "citybank",
+              "denominacion": "City",
+              "direccion": "new york 5000",
+              "holderType": "Personal",
+              "accountType": "Checking",
+              "nroBancoABA": "123456789",
+              "idSWIFT": "12345678",
+              "notas": null
+            },
+            {
+              "cuenta": "1234567890777777777777",
+              "moneda": null,
+              "banco": null,
+              "denominacion": null,
+              "direccion": null,
+              "holderType": null,
+              "accountType": null,
+              "nroBancoABA": null,
+              "idSWIFT": null,
+              "notas": null
+            }
+          ],
+          "datosConyuge": [
+            {
+              "nombre": "maria",
+              "apellido": "gomez",
+              "tipoID": "DNI",
+              "id": "12345111",
+              "tipoFiscal": "CUIL",
+              "claveFiscal": "1234560000"
+            },
+            {
+              "nombre": "juana",
+              "apellido": "zuares",
+              "tipoID": "DNI",
+              "id": "87654111",
+              "tipoFiscal": null,
+              "claveFiscal": null
+            }
+          ],
+          "infoPatrimonial": [
+            {
+              "fecha": "23/04/2012",
+              "patrimonio": 5000,
+              "ingresos": 4000,
+              "inversion": 50,
+              "procedenciaFondos": [
+                "Actividad principal"
+              ],
+              "observaciones": null
+            },
+            {
+              "fecha": "23/04/2012",
+              "patrimonio": null,
+              "ingresos": 45612,
+              "inversion": 20,
+              "procedenciaFondos": [
+                "Venta de bienes"
+              ],
+              "observaciones": null
+            }
+          ],
+          "actividadPersona": [
+            {
+              "actividad": "Empleado",
+              "rubro": "medicina",
+              "puesto": "encargado",
+              "departamento": "Enfermedia",
+              "organizacion": "la cruz roja",
+              "inicio": "23/04/2012",
+              "fin": null,
+              "observaciones": null
+            },
+            {
+              "actividad": "Empleado",
+              "rubro": null,
+              "puesto": null,
+              "departamento": null,
+              "organizacion": null,
+              "inicio": null,
+              "fin": null,
+              "observaciones": null
+            }
+          ],
+          "declaracionesPF": {
+            "expuestaPoliticamente": true,
+            "detalleExpPoliticamente": "el Detalle",
+            "sujetoObligado": true,
+            "numeroInscripcion": "43312",
+            "sujetoObligadoUIF": "holaaaaa",
+            "personaEEUU": true
+          },
+          "perfilInversor": {
+            "experiencia": "Buena",
+            "operoBolsa": true,
+            "perfilPersonal": "Moderado",
+            "clasificacionUIF": "Ocasional",
+            "cantidadCuentas": 1
+          }
+        },
+        "orden": 2,
+        "realizarSeguimiento": true,
+        "descripcion": null
+      }
+    ],
+    "accionista": [
+      {
+        "accionista": {
+          "personaFisica": true,
+          "datosPrincipalesFisicas": {
+            "nombre": "Claudio",
+            "apellido": "PEREZ",
+            "tipoID": "DNI",
+            "id": "42381087"
+          },
+          "datosFiscales": {
+            "tipoCodigo": "CUIL",
+            "cuit": "20157040151",
+            "tipoResponsableIVA": "Responsable monotributo",
+            "tipoResponsableGanancias": "Responsable monotributo",
+            "actividades": [
+              "[011] Cultivos temporales",
+              "[011121] Cultivo de maíz"
+            ]
+          },
+          "residenciaFiscalExterior": [
+            {
+              "residenciaFiscalExterior": "Angola",
+              "tipoIdExterior": null,
+              "idFiscalExterior": "55555"
+            },
+            {
+              "residenciaFiscalExterior": "Angola",
+              "tipoIdExterior": "NIF",
+              "idFiscalExterior": "4444444"
+            }
+          ],
+          "datosPersonales": {
+            "fechaNacimiento": "23/04/2012",
+            "sexo": "Masculino",
+            "estadoCivil": "Soltero",
+            "idioma": "español",
+            "nacionalidad": "Argentina",
+            "paisResidencia": "Argentina",
+            "paisOrigen": "Argentina",
+            "lugarNacimiento": "er",
+            "cie": "serf",
+            "actividad": "sffdfs"
+          },
+          "pasaporte": [
+            {
+              "pais": "Argentina",
+              "pasaporte": "dsad2",
+              "vencimiento": "23/04/2012",
+              "notas": "dgdgvd"
+            },
+            {
+              "pais": "Argentina",
+              "pasaporte": "dsad2",
+              "vencimiento": null,
+              "notas": null
+            }
+          ],
+          "mediocomunicacion": [
+            {
+              "tipo": "E-Mail",
+              "medio": "pppp@gmail.com",
+              "uso": "Personal",
+              "principal": true,
+              "notas": null
+            },
+            {
+              "tipo": "Movil",
+              "medio": "03512225566",
+              "uso": "Personal",
+              "principal": null,
+              "notas": null
+            }
+          ],
+          "domicilioUrbano": [
+            {
+              "uso": "Legal",
+              "barrio": "las carmenes",
+              "calle": "Ituzaingó",
+              "numero": 72,
+              "torre": null,
+              "piso": 1,
+              "departamento": "2",
+              "lugar": "Argentina, Córdoba, Capital, Córdoba",
+              "codigoPostal": "5000",
+              "notas": null
+            },
+            {
+              "uso": "Real",
+              "barrio": null,
+              "calle": "santa fe",
+              "numero": 18,
+              "torre": null,
+              "piso": null,
+              "departamento": null,
+              "lugar": "Argentina, Córdoba, Capital, Córdoba",
+              "codigoPostal": "5152",
+              "notas": null
+            }
+          ],
+          "domicilioSimple": [
+            {
+              "uso": "Legal",
+              "pais": "Argentina",
+              "direccion": "santa fe",
+              "ubicacion": "45",
+              "ciudad": "cordoaba",
+              "codigoPostal": "5152",
+              "provincia": "Cordoba",
+              "notas": null
+            },
+            {
+              "uso": "Real",
+              "pais": "Argentina",
+              "direccion": "colombia",
+              "ubicacion": null,
+              "ciudad": null,
+              "codigoPostal": "5153",
+              "provincia": null,
+              "notas": null
+            }
+          ],
+          "domicilioRural": [
+            {
+              "uso": "Legal",
+              "pais": "Argentina",
+              "direccion": "brazil",
+              "ubicacion": "55",
+              "codigoPostal": "5153",
+              "notas": null
+            },
+            {
+              "uso": "Real",
+              "pais": "Argentina",
+              "direccion": "colombia",
+              "ubicacion": "28",
+              "codigoPostal": "5120",
+              "notas": null
+            }
+          ],
+          "cuentaBancaria": [
+            {
+              "cbu": "0720000720000001435504",
+              "alias": "juan",
+              "interbancking": false,
+              "tipo": "Cuenta corriente",
+              "moneda": "ARS",
+              "numero": "4567890122",
+              "denominacion": null,
+              "uso": "Personal",
+              "principal": true
+            },
+            {
+              "cbu": "0720000720000001435504",
+              "alias": null,
+              "interbancking": null,
+              "tipo": null,
+              "moneda": null,
+              "numero": "4567890121",
+              "denominacion": null,
+              "uso": null,
+              "principal": null
+            }
+          ],
+          "cuentaBancariaExterior": [
+            {
+              "cuenta": "1234567890777777777777",
+              "moneda": "ARS",
+              "banco": "citybank",
+              "denominacion": "City",
+              "direccion": "new york 5000",
+              "holderType": "Personal",
+              "accountType": "Checking",
+              "nroBancoABA": "123456789",
+              "idSWIFT": "12345678",
+              "notas": null
+            },
+            {
+              "cuenta": "1234567890777777777777",
+              "moneda": null,
+              "banco": null,
+              "denominacion": null,
+              "direccion": null,
+              "holderType": null,
+              "accountType": null,
+              "nroBancoABA": null,
+              "idSWIFT": null,
+              "notas": null
+            }
+          ],
+          "datosConyuge": [
+            {
+              "nombre": "maria",
+              "apellido": "gomez",
+              "tipoID": "DNI",
+              "id": "12345111",
+              "tipoFiscal": "CUIL",
+              "claveFiscal": "1234560000"
+            },
+            {
+              "nombre": "juana",
+              "apellido": "zuares",
+              "tipoID": "DNI",
+              "id": "87654111",
+              "tipoFiscal": null,
+              "claveFiscal": null
+            }
+          ],
+          "infoPatrimonial": [
+            {
+              "fecha": "23/04/2012",
+              "patrimonio": 5000,
+              "ingresos": 4000,
+              "inversion": 50,
+              "procedenciaFondos": [
+                "Actividad principal"
+              ],
+              "observaciones": null
+            },
+            {
+              "fecha": "23/04/2012",
+              "patrimonio": null,
+              "ingresos": 45612,
+              "inversion": 20,
+              "procedenciaFondos": [
+                "Venta de bienes"
+              ],
+              "observaciones": null
+            }
+          ],
+          "actividadPersona": [
+            {
+              "actividad": "Empleado",
+              "rubro": "medicina",
+              "puesto": "encargado",
+              "departamento": "Enfermedia",
+              "organizacion": "la cruz roja",
+              "inicio": "23/04/2012",
+              "fin": null,
+              "observaciones": null
+            },
+            {
+              "actividad": "Empleado",
+              "rubro": null,
+              "puesto": null,
+              "departamento": null,
+              "organizacion": null,
+              "inicio": null,
+              "fin": null,
+              "observaciones": null
+            }
+          ],
+          "declaracionesPF": {
+            "expuestaPoliticamente": true,
+            "detalleExpPoliticamente": "el Detalle",
+            "sujetoObligado": true,
+            "numeroInscripcion": "43312",
+            "sujetoObligadoUIF": "holaaaaa",
+            "personaEEUU": true
+          },
+          "perfilInversor": {
+            "experiencia": "Buena",
+            "operoBolsa": true,
+            "perfilPersonal": "Moderado",
+            "clasificacionUIF": "Ocasional",
+            "cantidadCuentas": 1
+          }
+        },
+        "cantidad": 9600,
+        "porcentaje": 48
+      }
+    ],
+    "patrimonioYBalance": [
+      {
+        "fecha": "23/04/2012",
+        "activos": 20000,
+        "pasivos": 1000,
+        "patrimonio": 50000,
+        "ingresos": 15000,
+        "egresos": 2000,
+        "inversion": 20,
+        "procedenciaFondos": [
+          "Actividad principal"
+        ],
+        "observaciones": null
+      },
+      {
+        "fecha": "23/04/2012",
+        "activos": null,
+        "pasivos": null,
+        "patrimonio": null,
+        "ingresos": null,
+        "egresos": null,
+        "inversion": null,
+        "procedenciaFondos": [
+          "Actividad principal"
+        ],
+        "observaciones": null
+      }
+    ],
+    "actividadOrganizacion": [
+      {
+        "actividad": "Empleado",
+        "rubro": "medicina",
+        "actividadSecundaria": null,
+        "observaciones": null
+      },
+      {
+        "actividad": "Empleado",
+        "rubro": null,
+        "actividadSecundaria": "Secretaria",
+        "observaciones": null
+      }
+    ],
+    "declaracionesPI": {
+      "inscripcionSujetoObligado": true,
+      "numeroInscripcionSujetoObligado": 45678,
+      "observacionesInscripcionSujetoObligado": null,
+      "esEstadounidense": false
+    },
+    "perfilInversor": {
+      "experiencia": "Buena",
+      "operoBolsa": true,
+      "perfilPersonal": "Moderado",
+      "clasificacionUIF": "Ocasional",
+      "cantidadCuentas": 1
+    }
+  },
+  "disposicionesGenerales": {
+    "horizonteInversion": "Menor a un año",
+    "perfilDeInversion": "Conservador"
+  },
+  "personaRelacionada": [
+    {
+      "tipo": "Condómino",
+      "persona": {
+        "personaFisica": true,
+        "datosPrincipalesFisicas": {
+          "nombre": "Claudio",
+          "apellido": "PEREZ",
+          "tipoID": "DNI",
+          "id": "42381054"
+        },
+        "datosFiscales": {
+          "tipoCodigo": "CUIL",
+          "cuit": "20157040151",
+          "tipoResponsableIVA": "Responsable monotributo",
+          "tipoResponsableGanancias": "Responsable monotributo",
+          "actividades": [
+            "[011] Cultivos temporales",
+            "[011121] Cultivo de maíz"
+          ]
+        },
+        "residenciaFiscalExterior": [
+          {
+            "residenciaFiscalExterior": "Angola",
+            "tipoIdExterior": null,
+            "idFiscalExterior": "55555"
+          },
+          {
+            "residenciaFiscalExterior": "Angola",
+            "tipoIdExterior": "NIF",
+            "idFiscalExterior": "4444444"
+          }
+        ],
+        "datosPersonales": {
+          "fechaNacimiento": "23/04/2012",
+          "sexo": "Masculino",
+          "estadoCivil": "Soltero",
+          "idioma": "español",
+          "nacionalidad": "Argentina",
+          "paisResidencia": "Argentina",
+          "paisOrigen": "Argentina",
+          "lugarNacimiento": "er",
+          "cie": "serf",
+          "actividad": "sffdfs"
+        },
+        "pasaporte": [
+          {
+            "pais": "Argentina",
+            "pasaporte": "dsad2",
+            "vencimiento": "23/04/2012",
+            "notas": "dgdgvd"
+          },
+          {
+            "pais": "Argentina",
+            "pasaporte": "dsad2",
+            "vencimiento": null,
+            "notas": null
+          }
+        ],
+        "mediocomunicacion": [
+          {
+            "tipo": "E-Mail",
+            "medio": "pppp@gmail.com",
+            "uso": "Personal",
+            "principal": true,
+            "notas": null
+          },
+          {
+            "tipo": "Movil",
+            "medio": "03512225566",
+            "uso": "Personal",
+            "principal": null,
+            "notas": null
+          }
+        ],
+        "domicilioUrbano": [
+          {
+            "uso": "Legal",
+            "barrio": "las carmenes",
+            "calle": "Ituzaingó",
+            "numero": 72,
+            "torre": null,
+            "piso": 1,
+            "departamento": "2",
+            "lugar": "Argentina, Córdoba, Capital, Córdoba",
+            "codigoPostal": "5000",
+            "notas": null
+          },
+          {
+            "uso": "Real",
+            "barrio": null,
+            "calle": "santa fe",
+            "numero": 18,
+            "torre": null,
+            "piso": null,
+            "departamento": null,
+            "lugar": "Argentina, Córdoba, Capital, Córdoba",
+            "codigoPostal": "5152",
+            "notas": null
+          }
+        ],
+        "domicilioSimple": [
+          {
+            "uso": "Legal",
+            "pais": "Argentina",
+            "direccion": "santa fe",
+            "ubicacion": "45",
+            "ciudad": "cordoaba",
+            "codigoPostal": "5152",
+            "provincia": "Cordoba",
+            "notas": null
+          },
+          {
+            "uso": "Real",
+            "pais": "Argentina",
+            "direccion": "colombia",
+            "ubicacion": null,
+            "ciudad": null,
+            "codigoPostal": "5153",
+            "provincia": null,
+            "notas": null
+          }
+        ],
+        "domicilioRural": [
+          {
+            "uso": "Legal",
+            "pais": "Argentina",
+            "direccion": "brazil",
+            "ubicacion": "55",
+            "codigoPostal": "5153",
+            "notas": null
+          },
+          {
+            "uso": "Real",
+            "pais": "Argentina",
+            "direccion": "colombia",
+            "ubicacion": "28",
+            "codigoPostal": "5120",
+            "notas": null
+          }
+        ],
+        "cuentaBancaria": [
+          {
+            "cbu": "0720000720000001435504",
+            "alias": "juan",
+            "interbancking": false,
+            "tipo": "Cuenta corriente",
+            "moneda": "ARS",
+            "numero": "4567890122",
+            "denominacion": null,
+            "uso": "Personal",
+            "principal": true
+          },
+          {
+            "cbu": "0720000720000001435504",
+            "alias": null,
+            "interbancking": null,
+            "tipo": null,
+            "moneda": null,
+            "numero": "4567890121",
+            "denominacion": null,
+            "uso": null,
+            "principal": null
+          }
+        ],
+        "cuentaBancariaExterior": [
+          {
+            "cuenta": "1234567890777777777777",
+            "moneda": "ARS",
+            "banco": "citybank",
+            "denominacion": "City",
+            "direccion": "new york 5000",
+            "holderType": "Personal",
+            "accountType": "Checking",
+            "nroBancoABA": "123456789",
+            "idSWIFT": "12345678",
+            "notas": null
+          },
+          {
+            "cuenta": "1234567890777777777777",
+            "moneda": null,
+            "banco": null,
+            "denominacion": null,
+            "direccion": null,
+            "holderType": null,
+            "accountType": null,
+            "nroBancoABA": null,
+            "idSWIFT": null,
+            "notas": null
+          }
+        ],
+        "datosConyuge": [
+          {
+            "nombre": "maria",
+            "apellido": "gomez",
+            "tipoID": "DNI",
+            "id": "12345111",
+            "tipoFiscal": "CUIL",
+            "claveFiscal": "1234560000"
+          },
+          {
+            "nombre": "juana",
+            "apellido": "zuares",
+            "tipoID": "DNI",
+            "id": "87654111",
+            "tipoFiscal": null,
+            "claveFiscal": null
+          }
+        ],
+        "infoPatrimonial": [
+          {
+            "fecha": "23/04/2012",
+            "patrimonio": 5000,
+            "ingresos": 4000,
+            "inversion": 50,
+            "procedenciaFondos": [
+              "Actividad principal"
+            ],
+            "observaciones": null
+          },
+          {
+            "fecha": "23/04/2012",
+            "patrimonio": null,
+            "ingresos": 45612,
+            "inversion": 20,
+            "procedenciaFondos": [
+              "Venta de bienes"
+            ],
+            "observaciones": null
+          }
+        ],
+        "actividadPersona": [
+          {
+            "actividad": "Empleado",
+            "rubro": "medicina",
+            "puesto": "encargado",
+            "departamento": "Enfermedia",
+            "organizacion": "la cruz roja",
+            "inicio": "23/04/2012",
+            "fin": null,
+            "observaciones": null
+          },
+          {
+            "actividad": "Empleado",
+            "rubro": null,
+            "puesto": null,
+            "departamento": null,
+            "organizacion": null,
+            "inicio": null,
+            "fin": null,
+            "observaciones": null
+          }
+        ],
+        "declaracionesPF": {
+          "expuestaPoliticamente": true,
+          "detalleExpPoliticamente": "el Detalle",
+          "sujetoObligado": true,
+          "numeroInscripcion": "43312",
+          "sujetoObligadoUIF": "holaaaaa",
+          "personaEEUU": true
+        },
+        "perfilInversor": {
+          "experiencia": "Buena",
+          "operoBolsa": true,
+          "perfilPersonal": "Moderado",
+          "clasificacionUIF": "Ocasional",
+          "cantidadCuentas": 1
+        }
+      },
+      "orden": 0,
+      "desde": "23/04/2012",
+      "hasta": "23/04/2012",
+      "porcentaje": 20,
+      "descripcion": "ninguna"
+    }
+  ],
+  "usoFirma": [
+    {
+      "tipo": "Conjunta",
+      "desde": "23/04/2012",
+      "hasta": "23/04/2012",
+      "firmantes": [
+        42381054
+      ],
+      "aclaracion": "Luis Ordoñez"
+    },
+    {
+      "tipo": "Indistinta",
+      "desde": null,
+      "hasta": null,
+      "firmantes": null,
+      "aclaracion": null
+    }
+  ],
+  "medioComunicacion": [
+    {
+      "tipo": "E-Mail",
+      "medio": "aaaa@gmail.com",
+      "uso": "Personal",
+      "principal": true,
+      "notas": null
+    },
+    {
+      "tipo": "Movil",
+      "medio": "03512223344",
+      "uso": "Personal",
+      "principal": null,
+      "notas": null
+    }
+  ],
+  "domicilioUrbano": [
+    {
+      "uso": "Legal",
+      "barrio": "las carmenes",
+      "calle": "brazil",
+      "numero": 22,
+      "torre": "1",
+      "piso": 2,
+      "departamento": "201",
+      "lugar": "Argentina, Córdoba, Capital, Córdoba",
+      "codigoPostal": "5152",
+      "notas": null
+    },
+    {
+      "uso": "Real",
+      "barrio": null,
+      "calle": "brazil",
+      "numero": null,
+      "torre": null,
+      "piso": null,
+      "departamento": null,
+      "lugar": "Argentina, Córdoba, Capital, Córdoba",
+      "codigoPostal": "5152",
+      "notas": null
+    }
+  ],
+  "domicilioSimple": [
+    {
+      "uso": "Legal",
+      "pais": "Argentina",
+      "direccion": "brazil",
+      "ubicacion": "22",
+      "ciudad": "cordoaba",
+      "codigoPostal": "5152",
+      "provincia": "Cordoba",
+      "notas": null
+    },
+    {
+      "uso": "Real",
+      "pais": "Argentina",
+      "direccion": "colombia",
+      "ubicacion": null,
+      "ciudad": null,
+      "codigoPostal": "5152",
+      "provincia": null,
+      "notas": null
+    }
+  ],
+  "domicilioRural": [
+    {
+      "uso": "Legal",
+      "pais": "Argentina",
+      "direccion": "brazil",
+      "ubicacion": "22",
+      "codigoPostal": "5152",
+      "notas": null
+    },
+    {
+      "uso": "Real",
+      "pais": "Argentina",
+      "direccion": "colombia",
+      "ubicacion": "22",
+      "codigoPostal": "5000",
+      "notas": null
+    }
+  ],
+  "cuentaBancaria": [
+    {
+      "cbu": "0720000720000001435504",
+      "alias": "juan",
+      "interbancking": false,
+      "titular": "42381054",
+      "tipo": "Cuenta corriente",
+      "moneda": "ARS",
+      "numero": "12345678",
+      "denominacion": null,
+      "uso": "Personal",
+      "principal": true,
+      "notas": null
+    },
+    {
+      "cbu": "0720000720000001435504",
+      "alias": null,
+      "interbancking": null,
+      "titular": "42381054",
+      "tipo": null,
+      "moneda": null,
+      "numero": "12345678",
+      "denominacion": null,
+      "uso": null,
+      "principal": null,
+      "notas": null
+    }
+  ]
+}

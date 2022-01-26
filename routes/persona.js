@@ -6,7 +6,7 @@
 const { Router } = require('express');
 const router = Router();
 const { personaFisicaValidaciones } = require('../middlewares/personaFisica');
-const { personaFisica, personaJuridica } = require('../controllers/persona');
+const { personaFisica, personaJuridica, test } = require('../controllers/persona');
 
 router.post(
     '/fisica',
